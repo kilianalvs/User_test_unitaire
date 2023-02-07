@@ -36,6 +36,7 @@ class UserTest {
     @Test
     void isValidShouldReturnTrue() throws AccessDeniedException {
         User user = getMockUser();
+        user.setEmail("");
         assertTrue(user.isValid());
     }
 
